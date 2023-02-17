@@ -11,7 +11,7 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 COPY . .
 
-RUN npm install -g nodemon  
+RUN npm install && npm install nodemon -g
 
 ENTRYPOINT [ "nodemon"]
 
